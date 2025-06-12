@@ -9,3 +9,5 @@ Leveraging the power of advanced image processing and 3D rendering techniques, t
 ./3DVertebrae.png
 
 3D-Organ-Visualization/3DLiver.png
+
+3DVertebrae.png
