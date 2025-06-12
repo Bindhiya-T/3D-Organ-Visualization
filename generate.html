@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generate 3D Model</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Organ Viewer</h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="generate.html">Generate 3D Model</a>
+      </nav>
+      <div class="bottom-image">
+        <img src="profile.gif" alt="Profile" />
+      </div>
+    </aside>
+
+    <!-- 3D Viewer Canvas + Upload -->
+    <main class="viewer-container">
+      <div id="upload-container">
+        <input type="file" id="fileInput" accept=".stl" />
+        <button id="generateBtn">Generate 3D Model</button>
+      </div>
+
+      <!-- The 3D canvas will be injected here by JS -->
+    </main>
+  </div>
+
+  <script type="module" src="viewer.js"></script>
+  <script>
+    const links = document.querySelectorAll('.sidebar nav a');
+    links.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  </script>
+  
+</body>
+</html>

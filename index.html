@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive 3D Organ Viewer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Organ Viewer</h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="generate.html">Generate 3D Model</a>
+      </nav>
+      <!-- Circular image at the bottom-center -->
+      <div class="bottom-image">
+        <img src="profile.gif" alt="Profile" />
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <div class="content-box">
+        <h1>Interactive VR and CV-Based 3D Organ Visualization</h1>
+        <p>Introducing our innovative 3D Organ visualization project—a cutting-edge solution designed to transform traditional CT scan DICOM images into interactive 3D models. 
+          Our platform bridges the gap between medical imaging and practical application, offering an intuitive and detailed representation of internal organs. 
+          By converting 2D slices into comprehensive 3D structures, the tool empowers surgeons and medical professionals with enhanced spatial understanding, aiding in accurate diagnosis, surgical planning, and treatment decisions. 
+          The platform not only improves precision in clinical settings but also serves as a valuable educational resource for students and trainees, enabling immersive learning experiences. 
+          Our solution supports DICOM format integration, ensuring compatibility with standard medical imaging workflows. 
+          The generated 3D models can be rotated and  zoomed, virtually, offering users a dynamic and manipulable view of the anatomical structures. Leveraging the power of advanced image processing and 3D rendering techniques, this project stands at the intersection of healthcare and technology, enhancing medical insight and accessibility.</p>
+        <a href="generate.html" class="button">Generate 3D Model</a>
+      </div>
+    </main>
+
+    <!-- Right image -->
+    <div class="side-image">
+      <img src="sideimg.png" alt="Organ" />
+    </div>
+  </div>
+  <script>
+    const links = document.querySelectorAll('.sidebar nav a');
+    links.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  </script>
+  
+</body>
+</html>
