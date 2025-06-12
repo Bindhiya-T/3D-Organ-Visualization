@@ -7,4 +7,6 @@ Our solution supports DICOM format integration, ensuring compatibility with stan
 Leveraging the power of advanced image processing and 3D rendering techniques, this project stands at the intersection of healthcare and technology, enhancing medical insight and accessibility.
 
 
-3DVertebrae.png
+3D-Organ-Visualization/3DVertebrae.png
+
+3D-Organ-Visualization/3DLiver.png
