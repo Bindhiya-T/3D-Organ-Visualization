@@ -6,7 +6,6 @@ By converting 2D slices into comprehensive 3D structures, the tool empowers surg
 Our solution supports DICOM format integration, ensuring compatibility with standard medical imaging workflows. The generated 3D models can be rotated and zoomed, virtually, offering users a dynamic and manipulable view of the anatomical structures. 
 Leveraging the power of advanced image processing and 3D rendering techniques, this project stands at the intersection of healthcare and technology, enhancing medical insight and accessibility.
 
-
-3D-Organ-Visualization/3DVertebrae.png
+./3DVertebrae.png
 
 3D-Organ-Visualization/3DLiver.png
